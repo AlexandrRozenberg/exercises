@@ -24,9 +24,8 @@ public class Solution {
         if (node == null)
             return;
 
-        result.add(node.var){
+        result.add(node.var);
             preorderTraversalHelper(node.left, result);
             preorderTraversalHelper(node.right, result);
-        }
     }
 }
