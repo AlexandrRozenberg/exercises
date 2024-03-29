@@ -1,0 +1,21 @@
+package exercises.leedcode.task1313;
+
+import java.util.ArrayList;
+
+public class Solution {
+    public int[] decompressRLElist(int[] nums) {
+        ArrayList<Integer> ls = new ArrayList<>();
+        int i = 0;
+        while (i < nums.length){
+            for (int j = 0; j < nums[i]; j++){
+                ls.add(nums[i + 1]);
+            }
+            i += 2;
+        }
+        int[] ans = new int[ls.size()];
+        for (int k = 0; k < ans.length; k++){
+            ans[k] = ls.get(k);
+        }
+        return ans;
+    }
+}
