@@ -1,5 +1,7 @@
 package exercises.leedcode.task2974;
 
+import java.util.Arrays;
+
 public class Solution {
     public int[] numberGame(int[] nums) {
         Arrays.sort(nums);
